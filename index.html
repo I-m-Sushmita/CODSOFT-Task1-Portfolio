@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NZ&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- HEADER SECTION START -->
+    <header>
+        <nav id="navbar">
+            <div class="lefthead fade-down">
+                <h1>Sushmita</h1>
+            </div>
+            <div class="righthead fade-down">
+                <ul>
+                    <li class="nav-link"><a href="#home">Home</a></li>
+                    <li class="nav-link"><a href="#about">About</a></li>
+                    <li class="nav-link"><a href="#skills">Skills</a></li>
+                    <li class="nav-link"><a href="#projects">Projects</a></li>
+                    <li class="nav-link"><a href="#home">Resume</a></li>
+                    <li class="nav-link"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="menu-icon" id="menu-icon">
+                <i class="fa fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    <!-- SIDEBAR SECTION -->
+    <div class="sidebar" id="sidebar">
+        <a href="javascript:void(0)" class="closebtn" id="closebtn">&times;</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#home">Resume</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+
+    <!-- HEADER SECTION END -->
+    <!-- HERO SECTION START -->
+    <section class="home" id="home">
+        <div class="home-content fade-up">
+            <h3>Hi Myself</h3>
+            <h1>Sushmita</h1>
+            <h3>And I'm a <span class=highlight id="element">Frontend Developer</span></h3>
+
+            <div class="social-media">
+                <a href="https://github.com/I-m-Sushmita"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/sushmita007/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div>
+                <a href="https://drive.google.com/file/d/1CIw6j9X8S1t9P-pMrGcdmu6PMhtTgVFT/view?usp=sharing"
+                    target="_blank" class="btn">Downlode Resume</a>
+            </div>
+        </div>
+
+    </section>
+    <!-- HERO SECTION END -->
+    <!-- ABOUT SECTION START -->
+    <section class="about" id="about">
+        <div class="about-conteiner">
+            <div class="about-img fade-right">
+                <img src="https://i.ibb.co/g6jNk41/whatsimg1.jpg" alt="developer img">
+            </div>
+            <div class="about-content fade-left">
+                <h2 class="heading">About <span>Me</span></h2>
+                <h1>Frontend Developer</h1>
+                <p>I am a dedicated professional with a passion for creating exceptional user experiences. With a
+                    background in frontend development, web development, I bring a unique blend of
+                    technical skills and design expertise to every project. My goal is to craft user-centric solutions
+                    that not only meet but exceed expectations, ensuring both functionality and aesthetics are
+                    seamlessly integrated into every product I work on.</p>
+                <a href="#skills" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+    <!-- ABOUT SECTION END -->
+    <!-- SKILL SECTION START -->
+    <section class="skill" id="skills">
+        <div class="top-skill">
+            <h2 class="heading fade-up">Skills</h2>
+        </div>
+        <div class="bottom-skill">
+            <img class="left-logo fade-right" src="/images/c logo.png" alt="c-logo">
+            <img class="up-logo fade-up" src="/images/html logo.png" alt="html-logo">
+            <img class="right-logo fade-left" src="/images/css logo.png" alt="css-logo">
+            <img class="left-logo fade-right" src="/images/js logo.png" alt="js-logo">
+            <img class="up-logo fade-up" src="/images/react logo.png" alt="react-logo">
+            <img class="right-logo fade-left" src="/images/bootstrap logo.png" alt="bootstrap-logo">
+            <img class="up-logo fade-up" src="/images/php logo.png" alt="php-logo">
+        </div>
+    </section>
+    <!-- SKILL SECTION END -->
+    <!-- PROJECT SECTION START -->
+    <section class="projects" id="projects">
+        <h2 class="heading fade-up">My <span>Projects</span></h2>
+        <div class="project-filters">
+            <button id="filter-all" class="btn fade-in" onclick="filterProjects('all')">All</button>
+            <button id="filter-latest" class="btn fade-in" onclick="filterProjects('latest')">Latest</button>
+        </div>
+        <div class="project-title">
+            <div class="projects-box fade-right">
+                <img src="/images/project1.jpg">
+                <div class="project-content">
+                    <h4>Technical Documentation</h4>
+                    <a href="//i-m-sushmita.github.io/technical_documentation_page/" target="_blank">
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="projects-box fade-left">
+                <img src="/images/project2.jpg">
+                <div class="project-content">
+                    <h4>Tribute Page</h4>
+                    <a href="https://i-m-sushmita.github.io/tribute_page/" target="_blank">
+
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="projects-box fade-right">
+                <img src="/images/project3.jpg">
+                <div class="project-content">
+                    <h4> Plant Shop Landing Page</h4>
+                    <a href="https://i-m-sushmita.github.io/plant-shop-landing-page/" target="_blank">
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="projects-box latest fade-left">
+                <img src="/images/project4.jpg">
+                <div class="project-content">
+                    <h4>Gym Website</h4>
+                    <a href=" https://i-m-sushmita.github.io/gym-website-react/" target="_blank">
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="projects-box latest fade-right">
+                <img src="/images/project5.avif">
+                <div class="project-content">
+                    <h4>Cafe Landing Page</h4>
+                    <a href=" https://i-m-sushmita.github.io/CODSOFT-Task2-landing_page/" target="_blank">
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="projects-box latest fade-left">
+                <img src="/images/project6.png">
+                <div class="project-content">
+                    <h4>Calculator</h4>
+                    <a href=" https://i-m-sushmita.github.io/CODSOFT-Task3-calculator/" target="_blank">
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- PROJECT SECTION END -->
+    <!-- RESUME SECTION START -->
+
+    <!-- RESUME SECTION END -->
+    <!-- CONTACT SECTION START -->
+    <section class="contact" id="contact">
+
+        <div class="form">
+            <div class="contact-info fade-right">
+                <h3 class="title">Let's get in touch</h3>
+                <p class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                    dolorum adipisci recusandae praesentium dicta!
+                </p>
+
+                <div class="info">
+                    <div class="information">
+                        <p>Siliguri,West-Bengal,India</p>
+                    </div>
+                    <div class="information">
+
+                        <p>sushmitasutradhar839@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="social-media">
+                    <p>Connect with me :</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/I-m-Sushmita"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/sushmita007/"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form fade-left">
+
+                <form action="index.html" autocomplete="off">
+                    <h3 class="title">Contact Me</h3>
+                    <div class="input-container">
+                        <input type="text" name="name" class="input" placeholder="Enter your name" />
+                    </div>
+                    <div class="input-container">
+                        <input type="email" name="email" class="input" placeholder="Email" />
+                    </div>
+                    <div class="input-container">
+                        <input type="tel" name="phone" class="input" placeholder="Phone" />
+                    </div>
+                    <div class="input-container textarea">
+                        <textarea name="message" class="input" placeholder="Message"></textarea>
+                    </div>
+                    <input type="submit" value="Send" class="btn-contact" />
+                </form>
+            </div>
+        </div>
+
+    </section>
+    <!-- CONTACT SECTION END -->
+    <!-- FOOTER SECTION START -->
+    <footer class="footer">
+        <div class="footer-text fade-in">
+            <p>Copyright &copy; 2024 by Sushmita</p>
+        </div>
+        <div class="footer-icon fade-in">
+            <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+    </footer>
+
+    <!-- FOOTER SECTION END -->
+    <script src="https://kit.fontawesome.com/0e1d488033.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Frontend Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
